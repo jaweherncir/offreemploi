@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/yellow_text"
+    tools:context=".Parameter">
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="411dp"
+        android:layout_height="869dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="418dp"
+                    android:layout_height="357dp"
+                    app:srcCompat="@drawable/para"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="-5dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+
+
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:text="changer Mode Application"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:textStyle="bold"
+
+
+                />
+
+
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="411dp"
+                android:layout_height="wrap_content"
+
+                android:backgroundTint="#41318a"
+                android:elevation="3dp"
+                tools:layout_editor_absoluteY="352dp" />
+            <TextView
+                android:id="@+id/txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+
+
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:text="Changer Langue"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:textStyle="bold"
+
+
+                />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="#41318a"
+                android:elevation="3dp"
+                android:text="Français"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16sp"
+                android:layout_marginEnd="32dp"
+                android:textStyle="bold|italic"/>
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16sp"
+                android:layout_marginEnd="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="#41318a"
+                android:elevation="3dp"
+                android:text="Anglais"
+                android:textStyle="bold|italic" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+
+                app:srcCompat="@drawable/cle" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

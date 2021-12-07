@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginUser">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:background="@drawable/top_drawable">
+
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/industrie"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="173dp"
+                    android:layout_height="52dp"
+                    android:text="connexion"
+                    android:textColor="#ffffff"
+                    android:textSize="30sp"
+                    android:textStyle="bold|italic"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="145dp"
+                    tools:layout_editor_absoluteY="316dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+
+
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:text="Nom Sociéte"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:textStyle="bold"
+
+
+                />
+
+            <EditText
+                android:id="@+id/NomSociete"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="Entrer Email Du société"
+                android:inputType="textEmailAddress"
+                android:textColorHint="#404040"
+                android:textSize="16sp"
+                android:paddingStart="32dp"
+                android:layout_marginTop="16sp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+
+                android:background="@drawable/background_edit"
+                />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+
+
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:text="Mot De Passe"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:textStyle="bold"
+
+
+                />
+
+            <EditText
+                android:id="@+id/passwordSoc"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:hint="Entrer Votre Mot De Passe"
+                android:textColorHint="#404040"
+                android:textSize="16sp"
+                android:paddingStart="32dp"
+                android:layout_marginTop="16sp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+
+                android:background="@drawable/background_edit"
+                />
+
+            <Button
+                android:id="@+id/ajouterOffre"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="32dp"
+                android:elevation="3dp"
+                android:layout_marginTop="16sp"
+                android:layout_marginEnd="32dp"
+                android:backgroundTint="#FFC107"
+                android:text="Connexion"
+                android:textColor="@color/black"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/txtnewCompteSos"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="110dp"
+                android:layout_marginTop="16sp"
+                android:layout_marginEnd="32dp"
+                android:onClick="newCompteSoc"
+                android:elevation="3dp"
+
+                android:text="Crée un compte"
+                android:textColor="#41318a"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                tools:ignore="OnClick" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

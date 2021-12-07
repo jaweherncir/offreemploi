@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+
+
+
+    <color name="white1">#FFF</color>
+    <color name="parte2">#241332</color>
+    <color name="parte3">#9599b3</color>
+    <color name="name_d">#221131</color>
+    <color name="date_d">#a7a0ae</color>
+    <color name="text_d">#7b7185</color>
+    <color name="name_l">#FFF</color>
+    <color name="date_l">#bcbece</color>
+    <color name="text_l">#bcdece</color>
+
+    <color name="border">#eeebef</color>
+
+    <color name="colorPrimary">#FFFFFFFF</color>
+    <color name="colorPrimaryDark">#FFFFFFFF</color>
+    <color name="colorAccent">#FFFFFFFF</color>
+    <color name="main_text">#000</color>
+
+
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="lightWhite">#F3F6F5</color>
+<style name="AnimationForDialog">
+
+    <item name="android:windowEnterAnimation">@anim/zoome_in</item>
+    <item name="android:windowExitAnimation">@anim/zome_aut</item>
+
+</style>
+
+
+</resources>

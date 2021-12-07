@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/top_drawable">
+
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="54dp"
+                     android:layout_marginLeft="20dp"
+                     android:orientation="horizontal"
+                     tools:ignore="MissingConstraints"
+
+
+
+                     >
+
+
+                     <ImageView
+                         android:id="@+id/btnback"
+                         android:layout_width="45dp"
+                         android:layout_height="60dp"
+                         android:layout_marginLeft="20sp"
+                         android:onClick="back"
+                         android:padding="10dp"
+                         android:scaleType="centerCrop"
+                         android:src="@drawable/backwhite"
+
+                         tools:ignore="OnClick" />
+
+
+
+
+
+
+                 </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:layout_marginLeft="350dp"
+                    android:orientation="horizontal"
+                    tools:ignore="MissingConstraints">
+
+                    <ImageView
+                        android:id="@+id/logsosiete"
+                        android:layout_width="45dp"
+                        android:layout_height="60dp"
+                        android:padding="10dp"
+                        android:scaleType="centerCrop"
+                         android:layout_marginRight="4dp"
+                        android:src="@drawable/ic_personne">
+
+                    </ImageView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    tools:ignore="MissingConstraints">
+
+
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                      android:src="@drawable/offre"
+                        android:textColor="#FFC107"
+                        android:textSize="30sp"
+                        android:textStyle="bold">
+
+                    </ImageView>
+                </LinearLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+
+
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:text="Nom du Sociéte"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:textStyle="bold"
+
+
+                />
+
+            <EditText
+                android:id="@+id/NomSociete"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16sp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/background_edit"
+                android:ems="10"
+                android:hint="Entrer Nom Du Sociéte"
+                android:inputType="textPersonName"
+                android:paddingStart="32dp"
+                android:textColorHint="#404040"
+
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+
+
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:text="Numéro"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:textStyle="bold"
+
+
+                />
+
+            <EditText
+                android:id="@+id/ednumsoc"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16sp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/background_edit"
+                android:ems="10"
+                android:inputType="number"
+                android:hint="Entrer Votre Numéro"
+
+                android:paddingStart="32dp"
+                android:textColorHint="#404040"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/adresse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+
+
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:text=" Adresse"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:textStyle="bold"
+
+
+                />
+
+            <EditText
+                android:id="@+id/edadresse"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16sp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/background_edit"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="Entrer Votre Adresse"
+
+                android:paddingStart="32dp"
+                android:textColorHint="#404040"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+
+
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:text=" Description"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:textStyle="bold"
+
+
+                />
+
+            <EditText
+                android:id="@+id/eddescription"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16sp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/background_edit"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:hint="entre votre Description"
+
+                android:paddingStart="32dp"
+                android:textColorHint="#404040"
+                android:textSize="16sp" />
+
+
+
+            <TextView
+                android:id="@+id/cat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+
+
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:text="Catégories"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:textStyle="bold"
+
+
+                />
+
+
+
+
+            <EditText
+                android:id="@+id/eddcategorie"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16sp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/background_edit"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:hint="entre votre Categorie"
+
+                android:paddingStart="32dp"
+                android:textColorHint="#404040"
+                android:textSize="16sp" />
+
+
+
+
+
+
+
+
+
+
+
+
+            <Button
+                android:id="@+id/ajouterOffre"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16sp"
+                android:layout_marginEnd="32dp"
+                android:backgroundTint="#FFC107"
+                android:elevation="3dp"
+                android:text="Ajouter"
+                android:textColor="@color/black"
+                android:textStyle="bold|italic" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
